@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .boy {
+            border: 2px solid black;
+            /* display: inline;
+        "THIS SYNTAX CHANGED THE BLOCK LVL ELEMENTS INTO INLINE ELEMENTS" 
+        IF YOU WANT TO USE MARGIN AND PADDING ALONG WITH CHANGING THE BLOCK ELEMENT TO INLINE ELEMENT US ETHIS SYNTAX 
+        "display: inline-block"*/
+            display: inline-block;
+            margin: 30px;
+            padding: 30px;
+        }
+        .boy1{
+            /* display: none; 
+            By using this syntax, we can completely remove the box*/
+
+            /* visibility: hidden;
+            By using using this syntax, we can completely remove the box, but it will still have its space. It means the space it was using will be there. */
+        }
+
+        .girl {
+            border: 2px solid red;
+            /* display: block; */
+            /* "THIS HAS CHANGED THE INLINE ELEMENTS INTO BLOCK LVL ELEMENTS" */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Display property !</h1> <br><br>
+    <div class="boy boy1">I am a boy</div>
+    <div class="boy boy2">I am a student</div>
+    <!-- These are the block lvl elements. By putting "display: inline;" they can be printed one after another, unlike printing them into next line. -->
+
+    <span class="girl girl1">He is a boy</span>
+    <span class="girl girl2">He is a student</span>
+    <!-- This is an inline element. By putting span onr after another, they will not not be printed at another line after another in next line. They will keep printing one after another. -->
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+    <style>
+        .text1{
+            font-weight: bold;
+            font-size: 15px;
+            text-align: left;
+        }
+        .parent{
+            border: 5px solid black;
+            background-color: lightyellow;
+            width: 50%;
+                /* 
+                50% = 50% of immediate parent. Here imeediate parent is "body" tag
+                */
+        }
+        .child{
+            border: 5px solid red;
+            background-color: aqua;
+            width: 50%;
+        }
+        .poo{
+            border: 2px solid black;
+            margin: 50px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+            box-sizing:border-box;
+            min-height: 50vw;
+                /* "min-height:" = means the site always maintain the min height of 50 vw wheather there is a content inside it or not. If you keep adding content inside it, it will keep increasing */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+
+    <pre class="text1">
+This means, 50% of width at parent means 50% of browser page, but 50% of width at child means 50% of the width of parent. 
+
+    This is bcoz child is the immediate descendant of parent. This inheritence of % applies to the immediate descendants.
+
+     Here child's box is overlapped on the box of parent. 
+    </pre>
+
+    <div class="poo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus enim sunt, reprehenderit consequatur aut ex magni hic beatae sed voluptatibus mollitia at repudiandae vel accusamus eaque quaerat minima excepturi iste architecto. lorem1235
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                text-align: center;
+                background-color: lightyellow;
+            }
+            #width{
+                text-align: center;
+                color: black;
+                width: 300px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid  black;
+            }
+            #width_b{
+                text-align: center;
+                color: black;
+                width: 300px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid  black;
+                box-sizing: border-box;
+            }
+
+                    /* 
+                    
+                    Note :--
+                    When you do not have "height" in style and you add "box-sizing: border-box;", the compiler will keep increasing the height of the Box, but it will keep the width as you have mentioned. Try changing the values at padding, margin, & border, you will notice this change.
+
+                    Vice versa for style box which have "height" only and do not have "margin"
+                    
+                    */
+
+            #height{
+                text-align: center;
+                color: black;
+                height: 100px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid  black;
+            }
+            #height_b{
+                text-align: center;
+                color: black;
+                height: 100px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid  black;
+                box-sizing: border-box;
+            }
+
+            #width_height{
+                text-align: center;
+                color: black;
+                width: 300px;
+                height: 100px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid  black;
+            }
+            #width_height_b{
+                text-align: center;
+                color: black;
+                width: 300px;
+                height: 100px;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid  black;
+                box-sizing: border-box;
+            }
+        </style>
+    <title>CSS Box Model</title>
+</head>
+<body>
+    <h1>CSS box model different tryouts</h1>
+    <div id="width">This is width</div>
+    <div id="width_b">This is width with "Box Sizing"</div>
+    <div id="height">This is height</div>
+    <div id="height_b">This is height with "Box Sizing"</div>
+    <div id="width_height">Width and Height together</div>
+    <div id="width_height_b">Width and Height with "Boz Sizing" </div>
+</body>
+</html>

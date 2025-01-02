@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: lightyellow;
+        }
+        .navbar{
+            background-color: rgb(253, 168, 182);;
+            color: black;
+            /* border: 2px solid black; */
+            border-radius: 0px 0px 35px 35px;
+        }
+        .ul{
+            list-style: none;
+            display: flex;
+            padding: 5px;
+        }
+        .link{
+            text-decoration: none;
+                /* to remove the underline under the text */
+            padding: 5px 15px;
+            border: 2px ;
+            border-radius: 20px;
+            margin: 20px;
+            background-color: lightpink;
+        }
+
+        /* LEARNING BORDER RADIUS */ 
+        
+        .radius{
+            /* margin: auto; */
+            display: flex;
+            flex-wrap: wrap;
+                /* By using this, it aligns the boxes in another line after another */
+        }
+        .rd{
+            border: 2px solid black;
+            margin: 10px;
+            width: 200px;
+            height: 60px;
+            padding: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rd1{
+            border-top-left-radius: 15px;
+        }
+        .rd2{
+            border-top-right-radius: 15px;
+        }
+        .rd3{
+            border-bottom-left-radius: 15px;
+        }
+        .rd4{
+            border-bottom-right-radius: 15px;
+        }
+        .rd5{
+            border-radius: 15px;
+        }
+        .rd6{
+            border-radius: 10px 30px 50px 70px;
+        }
+        .rd7{
+            border-radius: 20%;
+        }
+        .rd8{
+            border-radius: 80%;
+        }
+        .rd9{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 60%;
+                /* To make a circle we need to put equal values or pixels in both width and height */
+        }
+        .rd10{
+            border-end-end-radius: 15px;
+        }
+        .rd11{
+            border-start-start-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="ul">
+            <div class="link">Home</div>
+            <div class="link">About</div>
+            <div class="link">Services</div>
+            <div class="link">Options</div>
+            <div class="link">Career</div>
+        </div>
+    </div>
+
+    <h2>LEARNING BORDER RADIUS</h2>
+    <div class="primary">
+        <div class="radius">
+            <div class="rd rd1">TOP LEFT</div>
+            <div class="rd rd2">TOP RIGHT</div>
+            <div class="rd rd3">BOTTOM LEFT</div>
+            <div class="rd rd4">BOTTOM RIGHT</div>
+            <div class="rd rd5">BORDER RADIUS</div>
+            <div class="rd rd6">DIFFERENT BORDER - 10,30,50,70</div>
+            <div class="rd rd7">USING % </div>
+            <div class="rd rd8">USING % TO MAKE AN OVAL</div>
+            <div class="rd rd9">MAKING A CIRCLE USING %</div>
+            <div class="rd rd10">END END</div>
+            <div class="rd rd11">STARTS START</div>
+        </div>
+    </div>
+
+</body>
+</html>

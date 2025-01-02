@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        .heading{
+            background-color: pink;
+            border: 2px solid black;
+        }
+        *{
+            background-color: lightblue;
+        }
+
+
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+
+            font-weight: bolder;
+            color: white;
+        }
+
+        /* ANOTHER TYPE OF MEDIA QUERY */
+        @media screen and (orientation:landscape) {
+            *{
+                background-color: purple;
+            }
+            .boxes{
+                background-color: black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Hello, This is media query !!!</h1>
+    <div class="boxes">
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
+        <div class="box box4">box 4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .boxes{
+            border: 8px solid red;
+            padding: 5px;
+        }
+        .boxes *{
+            color: black;
+            font-weight: bolder;
+            border: 2px solid black;
+            margin: 3px;
+            padding: 3px;
+            
+        }
+        .box1{
+            margin-top: 30px;
+            margin-right: 900px;
+            background-color: red;
+            
+            padding-top: 30px;
+            padding-left: 80px;
+        }
+        .box:nth-child(even){
+            background-color: lightgreen;
+            /* This is used to put color at all the even or odd numbers */
+        }
+
+        /* USING OF "before" & "after" */
+        /* Plz keep in mind that, the syntax of before and after is used too much in modern day sites. Do remember the syntax in mind.
+        Remember these are the span elements. 
+        If apply these before and after tags univerally (without any class), they will automatically be applied to all the divs. TRY DOING THIS YOURSELF */
+        .boxes::before{
+            content: "Hello, this is before" ;
+                padding-left: 15px;
+                color: red;
+                font-weight: bolder;
+        }
+        .boxes::after{
+            content: "Goodbye this is after" ;
+                padding-left: 15px;
+                color: red;
+                font-weight: bolder;
+        }
+
+        /* USING OF "selection" selector */
+        /* Whenever you will be slection on the text by your mouse for copying any segment of text, then these changes will be applied. 
+        For now this is being applied to all the texts. If you want it to apply for certain parts of texts, then just put the name of the class you want to be changed.
+        for e.g. (boxes::selection{}) -- DO THIS  */
+        ::selection{
+            background-color: black;
+            color: red;
+        }
+
+        /* USING "::first-letter" */
+        /* This makes the first color of each .boxes yellow. You can also choose the specific on which you want to apply the changes.
+        for e.g. (.box::first-letter{}) 
+        
+        YOU CAN ALSO USE IT UNIVERSALLY AND APPLY IT TO ALL THE TEXTS BY REMOVING THE CLASS (::first-letter) */
+        .boxes::first-letter{
+            color: yellow;
+            font-size: 30px;
+        }
+
+        /* USING CHANGES IN "placeholder" TAG */
+        .text::placeholder{
+            color: black;
+            background-color: lightyellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is More Selectors !!!</h1>
+    <h2>Part 1</h2>
+    <div class="boxes">
+        <div class="box box1">THIS IS BOX 1</div>
+        <div class="box box2">THIS IS BOX 2</div>
+        <div class="box box3">THIS IS BOX 3</div>
+        <div class="box box4">THIS IS BOX 4</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, praesentium! Facilis dolorum ut praesentium non. Aliquid tenetur veniam nostrum adipisci ullam, voluptatum asperiores! Dolor quibusdam voluptas nostrum saepe dolorum praesentium numquam eligendi. Magni harum inventore dignissimos necessitatibus aspernatur laborum non autem, aliquid saepe corporis maxime tenetur pariatur asperiores fugiat velit!</p>
+    </div>
+    
+    <div>
+        <h2>Part 2</h2>
+        Name : <input type="text" class="text" placeholder="Enter your name here">
+    </div>
+</body>
+</html>

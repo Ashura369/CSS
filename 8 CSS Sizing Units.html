@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing units</title>
+    <style>
+        *{
+            background-color: lightyellow;
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{color: blue;
+        text-align: left;}
+        .box{
+            border: 2px solid black;
+            width: 50vw;
+            margin: auto;
+            background-color: aquamarine;
+                /* 
+                vw = Voiewport width
+                50vw = 50% of browser's screen
+                100vw = 100% of browser's screen 
+                "margin: auto;" = puts the box at center, this doesnt work in case of an inline element
+                */
+        }
+        .container1{
+            border: 2px solid black;
+            width: 80vw;
+            margin: 50px auto;
+                /* it means, 50px as margin from above and below, "auto" means same spaces from left and right */
+            background-color: aquamarine;
+        }
+        .container2{
+            border: 2px solid black;
+            width: 100vw;
+            height: 50vh;
+                /* 
+                "vh" = viewport height
+                50vh = 50% of browser screen height
+                100vw = 100% of browser screen's width 
+
+                vw FOR WEIDTH
+                vh FOR HEIGHT
+
+                */
+            margin: 50px auto;
+            background-color: aquamarine;
+            font-size: 16px;
+        }
+        .container3{
+            border: 2px solid black;
+            width: 100vw;
+            height: 50vh;
+            margin: 50px auto;
+            background-color: aquamarine;
+            font-size: 1.5em;
+                /* 
+                font size 1.5em = default font size 16 px's 1.5 times text size
+                if font size 2em = default font's 2 times text size
+                */
+        }
+        
+        /* 
+        Using "rem"
+
+        if put this sintex, where all text's font size changes to 13 px
+        html{
+            font-size: 13px;
+        }
+            THIS FONT TYPE WILL BE APPLIED TO ALL THE TEXTS
+
+        Now if we want to use rem the just type 
+
+        .name{
+            font: size 1.5rem;
+            }
+
+
+        here it means, 1.5 times of html's universal font size
+        It means html is a root here
+        */
+        .container4{
+            border: solid black;
+            color: black;
+            background-color: aquamarine;
+            margin: 50px auto;
+            font-size:22px;
+            width: 100vmin;
+                    /* here width = 100vmin means 100vh */
+                /* 
+                phone = width < height
+                computer = width > height
+
+                So for better SEO, for phone website vmin is used in width, but for pc website vmin is used in height.
+
+                For better use at both phone and pc simultaneously use "vmax"
+                */
+        }
+        .container5{
+            border: solid black;
+            color: black;
+            background-color: aquamarine;
+            margin: 50px auto;
+            font-size:22px;
+            height: 100vmin;
+                    /* here heigt = 100vmin means 100vw */
+        }
+
+
+        .parent {
+            font-size: 10px;
+        }
+        .child {
+            font-size: 10em;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a CSS Sizing unit practice set</h1>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa distinctio aspernatur velit maiores. Placeat, voluptas illum quos molestiae atque, magni at doloribus accusamus laudantium consectetur dicta adipisci voluptatem dignissimos itaque.</div>
+
+    <div class="container1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam nisi iusto, ducimus qui ipsa soluta tempore debitis perferendis repudiandae explicabo illo deserunt officiis veritatis adipisci odio pariatur asperiores ea!</div>
+
+    <div class="container2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eius eveniet labore, temporibus, quisquam cum doloremque accusamus tempore, nesciunt tenetur provident modi placeat vel laboriosam quis. Sed eius ratione aperiam?</div>
+
+    <div class="container3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eius eveniet labore, temporibus, quisquam cum doloremque accusamus tempore, nesciunt tenetur provident modi placeat vel laboriosam quis. Sed eius ratione aperiam?</div>
+
+    <div class="container4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eius eveniet labore, temporibus, quisquam cum doloremque accusamus tempore, nesciunt tenetur provident modi placeat vel laboriosam quis. Sed eius ratione aperiam?</div>
+
+    <div class="container5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eius eveniet labore, temporibus, quisquam cum doloremque accusamus tempore, nesciunt tenetur provident modi placeat vel laboriosam quis. Sed eius ratione aperiam?</div>
+
+    <div class="parent"> PARENT
+        <div class="child">
+            CHILD
+        </div>
+        This here means that, child 10em means 10 times px of the parent font. Hence 10 * 10 = 100 px. Thus, here child's total font px is 100 px.
+    </div>
+</body>
+</html>

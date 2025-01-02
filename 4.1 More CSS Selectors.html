@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+            /* This means if .box is the first child of its parent (ie boxes) then the bg color will be applied */
+            
+            /* 
+            THIS WILL DO THE SAME
+            .box1:first-child{
+            background-color: red;
+            }
+            
+            */
+        }
+        .box:nth-child(2){
+            background-color: green;
+        }
+        .p1::first-line{
+            color: red;
+            font-weight: bolder;
+                /* It will change the color and font-weight of the first line of the device. It doesnt matter wheather the device contains 10 letteres or 15 letters on the screen (laptop or mobile) it will change the first line, no matter how many words it contains */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box box1">Hey I am a Box</div>
+        <div class="box box2">Hey I am a Box</div>
+        <div class="box box3">Hey I am a Box</div>
+        <p class="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem et, explicabo ab ratione labore, voluptatum odit ad maxime deleniti sit velit optio error iusto quis saepe repellat sint, non tenetur! Officiis fugit quaerat consequuntur corporis accusamus nemo optio nisi, enim id totam a nobis illo. Hic libero facilis temporibus. Cupiditate eligendi laborum ea magni tempore, quasi dolore nesciunt rem tenetur, odio, officiis itaque impedit consequuntur eveniet earum debitis vero aliquid. Quae sit amet dolorem quidem perspiciatis vitae architecto cupiditate at dicta laborum nostrum ab doloremque ipsa perferendis, ipsam debitis recusandae aspernatur molestias non! Rerum ipsa tempora iure nisi id. Accusantium, enim esse sapiente minima beatae voluptatibus, fuga est unde at dolore ab. Nam quae eaque veritatis, magni consequatur ducimus mollitia, sed dolor atque quaerat error voluptate ratione quidem fugiat corporis placeat ipsum minus velit? Eveniet optio repellendus cum, quia molestias reiciendis, possimus qui dolor nam eius quasi tenetur! Vel suscipit repellat quasi iste ea ratione voluptatem error incidunt dolor aperiam ut eos maxime, amet impedit, inventore perspiciatis. Numquam vel enim porro repellat, molestias nisi ducimus minus beatae necessitatibus consequatur incidunt, aliquid id deleniti nulla nesciunt quos autem provident, iure quis exercitationem non tempora? Eos impedit voluptatum minus quis odit.
+        </p>
+    </div>
+</body>
+</html>

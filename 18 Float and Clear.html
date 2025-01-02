@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1{
+            margin: 3px;
+            padding: 3px;
+            width: 230px;
+            float:left;
+                /* It will set the img at the left of the browser screen. */
+        }
+        .cards{
+            border: 10px solid blue;
+            margin: 3px;
+                /* you will be seeing on the site that as you have used "float:left;" bcoz of it the img will be overflowing on the blue border line 
+                
+                To avoid this you need to use "display: flow-root;". It will automatically fix the img inside of the blue border line. 
+
+                */
+            display: flow-root;
+        }
+        .card{
+            border:2px solid red;
+            margin: 3px;
+        }
+
+        .pine{
+            margin: 10px;
+            border: 5px solid black;
+            display: flow-root;
+        }
+        .img2{
+            margin: 3px;
+            padding: 3px;
+            width: 230px;
+            float: right;
+        }
+        .p{
+            border: 3px solid red;
+            margin: 3px;
+            padding: 3px;
+        }
+        .p2{
+            border: 3px solid green;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        .card>.card*3    
+    -->
+
+    <div class="cards">
+        <img src="https://images.unsplash.com/photo-1719046535702-5ff5eab3336a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img1" class="img1" >
+        <div class="card card1">Card 1</div>
+        <div class="card card2">Card 2</div>
+        <div class="card card3">Card 3</div>
+    </div>
+
+    <div class="pine">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Pinus_densiflora_Kumgangsan.jpg" alt="pine tree img" class="img2">
+        
+        <div class="p">
+            Pine trees are evergreen, coniferous resinous trees (or, rarely, shrubs) growing 3–80 metres (10–260 feet) tall, with the majority of species reaching 15–45 m (50–150 ft) tall.[4] The smallest are Siberian dwarf pine and Potosi pinyon, and the tallest is an 83.45 m (273.8 ft) tall sugar pine located in Yosemite National Park [5].
+
+
+            Ancient Pinus longaeva, California, United States
+            Pines are long lived and typically reach ages of 100–1,000 years, some even more. The longest-lived is the Great Basin bristlecone pine (P. longaeva). One individual of this species, dubbed "Methuselah", is one of the world's oldest living organisms at around 4,800 years old. This tree can be found in the White Mountains of California.[6] An older tree, now cut down, was dated at 4,900 years old.[7][8] It was discovered in a grove beneath Wheeler Peak and it is now known as "Prometheus" after the Greek immortal.[8]
+
+            The spiral growth of branches, needles, and cones scales are arranged in Fibonacci number ratios.[9][10] The new spring shoots are sometimes called "candles"; they are covered in brown or whitish bud scales and point upward at first, then later turn green and spread outward. These "candles" offer foresters a means to evaluate soil fertility and vigour of the trees.
+
+            Bark
+
+            Pinus taeda bark
+            The bark of most pines is thick and scaly, but some species have thin, flaky bark. The branches are produced in "pseudo whorls", actually a very tight spiral but appearing like a ring of branches arising from the same point. Many pines are uninodal, producing just one such whorl of branches each year, from buds at the tip of the year's new shoot, but others are multinodal, producing two or more whorls of branches per year.
+            Ancient Pinus longaeva, California, United States
+            Pines are long lived and typically reach ages of 100–1,000 years, some even more. The longest-lived is the Great Basin bristlecone pine (P. longaeva). One individual of this species, dubbed "Methuselah", is one of the world's oldest living organisms at around 4,800 years old. This tree can be found in the White Mountains of California.[6] An older tree, now cut down, was dated at 4,900 years old.[7][8] It was discovered in a grove beneath Wheeler Peak and it is now known as "Prometheus" after the Greek immortal.[8]
+
+            The spiral growth of branches, needles, and cones scales are arranged in Fibonacci number ratios.[9][10] The new spring shoots are sometimes called "candles"; they are covered in brown or whitish bud scales and point upward at first, then later turn green and spread outward. These "candles" offer foresters a means to evaluate soil fertility and vigour of the trees.
+
+            Bark
+
+            Pinus taeda bark
+            The bark of most pines is thick and scaly, but some species have thin, flaky bark. The branches are produced in "pseudo whorls", actually a very tight spiral but appearing like a ring of branches arising from the same point. Many pines are uninodal, producing just one such whorl of branches each year, from buds at the tip of the year's new shoot, but others are multinodal, producing two or more whorls of branches per year.
+            Ancient Pinus longaeva, California, United States
+            Pines are long lived and typically reach ages of 100–1,000 years, some even more. The longest-lived is the Great Basin bristlecone pine (P. longaeva). One individual of this species, dubbed "Methuselah", is one of the world's oldest living organisms at around 4,800 years old. This tree can be found in the White Mountains of California.[6] An older tree, now cut down, was dated at 4,900 years old.[7][8] It was discovered in a grove beneath Wheeler Peak and it is now known as "Prometheus" after the Greek immortal.[8]
+
+            The spiral growth of branches, needles, and cones scales are arranged in Fibonacci number ratios.[9][10] The new spring shoots are sometimes called "candles"; they are covered in brown or whitish bud scales and point upward at first, then later turn green and spread outward. These "candles" offer foresters a means to evaluate soil fertility and vigour of the trees.
+
+            Bark
+
+            Pinus taeda bark
+            The bark of most pines is thick and scaly, but some species have thin, flaky bark. The branches are produced in "pseudo whorls", actually a very tight spiral but appearing like a ring of branches arising from the same point. Many pines are uninodal, producing just one such whorl of branches each year, from buds at the tip of the year's new shoot, but others are multinodal, producing two or more whorls of branches per year.
+
+        </div>
+    </div>
+</body>
+</html>

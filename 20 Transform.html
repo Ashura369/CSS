@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property</title>
+    <style>
+        *{
+            background-color: lightyellow;
+        }
+        .con{
+            width: auto;
+            height: auto;
+            /* border: 5px solid red;
+            background-color: bisque; */
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1em;
+            gap: 10em;
+        }
+
+        /* TRANSFORM */
+        /* Transform property can be used at both parent and child boxes */
+        .box{
+            height: 8em;
+            width: 8em;
+            background-color: beige;
+            border: 2px solid black;
+            font-size: larger;
+            font-weight: bolder;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            border-radius: 0.5em;
+        }
+            /* ROTATE */
+            .box1{
+                transform: rotate(30deg);
+            }
+
+            /* TURN */
+            .box2{
+                transform: rotate(0.25turn);
+                    /* this rotates the box by 90deg */
+
+                    /* This rotates teh box
+                    0.25turn = 90deg rotate
+                    0.5turn = 180deg rotate
+                    1turn = 360deg rotate
+                    */
+            }
+
+            /* ROTATE X */
+            .box3{
+                transform: rotateX(40deg);
+                    /* GO TO THIS VIDEO FOR BETTER UNDERSTANDING :-- https://youtu.be/GGlzzLTLzxs?si=6D4kah2oqkNqMsFY&t=196 */
+            }
+            /* ROTATE Y */
+            .box4{
+                transform: rotateY(40deg);
+            }
+            /* ROTATE Z */
+            .box5{
+                transform: rotateZ(40deg);
+            }
+            /* SCALE */
+            .box6{
+                transform: scale(2);
+                    /* By using scale, you can incraese the scale or overall size of the box, if you put 1, the size will remain same bcoz 1*1=1.
+                    But if you put 2, the size will increase by 2 times bcoz 1*2=2 */
+            }
+            .box7{
+                transform: scaleX(2);
+                    /* https://youtu.be/GGlzzLTLzxs?si=aTng70K5PQHTwMm1&t=302 */
+            }
+            .box8{
+                transform: scaleY(2);
+            }
+            .box9{
+                transform: scaleZ(2);
+            }
+            /* SKEW */
+            .box10{
+                transform: skew(25deg);
+            }
+            .box11{
+                transform: skewx(25deg);
+            }
+            .box12{
+                transform: skewY(25deg);
+            }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box box1">30deg</div>
+        <div class="box box2">0.25 turn</div>
+        <div class="box box3">rotatex(40deg)</div>
+        <div class="box box4">rotatey(40deg)</div>
+        <div class="box box5">rotatez(40deg)</div>
+        <div class="box box6">scale</div>
+        <div class="box box7">scalex</div>
+        <div class="box box8">scaley</div>
+        <div class="box box9">scalez</div>
+        <div class="box box10">skew(25deg)</div>
+        <div class="box box11">skewx(25deg)</div>
+        <div class="box box12">skewy(25deg)</div>
+    </div>
+</body>
+</html>

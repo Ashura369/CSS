@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .con{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [a] 120px [b] 100px;
+                /* here by putting "a" & "b" we have named the first column as a and second column as b */
+            grid-template-rows: 100px 100px 100px;
+        }
+        .box{
+            /* width: 55px; */
+            height: 55px;
+            border: 2px solid red;
+        }
+            .b4, .b1{
+                grid-row: 1/2;
+                grid-column: a/b;
+                    /* start from 1 and end at 2 */
+                    /* as we have put same values at 2 contents, both the contents will be overlapped */
+            }
+           
+                
+    </style>      
+</head>
+<body>
+    <div class="con">
+        <div class="box b1">Home</div>
+        <div class="box b2">About</div>
+        <div class="box b3">Options</div>
+        <div class="box b4">Search</div>
+        <div class="box b5">Help !</div>
+        <div class="box b6">Career</div>
+    </div>
+
+    </div>
+</body>
+</html>

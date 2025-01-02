@@ -1,0 +1,104 @@
+*{
+    margin: auto;
+}
+h2{
+    margin-top: 30px;
+}
+.q2, .q3, .q4, .q5, .q6{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: aqua;
+}
+.p{
+    border: 2px solid black;
+    width: 60%;
+    margin: auto;
+    margin: 5px;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.q{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: aqua;
+}
+.p2{
+    border: 2px solid black;
+    width: 60%;
+    margin: auto;
+    margin: 5px;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.p3{
+    border: 2px solid black;
+    width: 250px;
+    height: 100px;
+    margin: auto;
+    margin: 5px;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.p4{
+    border: 2px solid black;
+    width: 600px;
+    height: 200px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:space-around;
+        /* try to use "space-around" here */
+    align-content: center;
+        /* Try commenting this out */
+        /* Try to use "align-items: center" */
+        /* ALIGN-ITEMS IS USED WHERE THERE IS ONE LINE IN THE BOX, BUT ALIGN-CONTENT IS USED WHERE THERE IS MULTIPLE LINES IN THE BOX */
+    flex-wrap: wrap;
+    gap: 15px;
+        /* adds the gap of 30 px btwn each box*/
+    row-gap: 6px;
+        /* Adds the gap of 6px btwn two rows.
+        The same goes with Columns. */
+}
+.p5{
+    border: 2px solid black;
+    width: 600px;
+    background-color: aliceblue;
+    margin: 10px;
+    display: flex;
+}
+.item1{
+    flex-grow: 5;
+        /* Increases the size of one box at the size of 5 boxes */
+        /* Try using flex-shrink: ; */
+        /* USED VERY LESS */
+}
+.p6{
+    border: 2px solid black;
+    width: 600px;
+    background-color: aliceblue;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        .a1{
+            align-self:flex-start;
+                /* puts the box at the top */
+        }
+        .a3{
+            align-self: flex-end;
+                /* puts the box at the bottom */
+        }

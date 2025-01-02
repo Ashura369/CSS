@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #normal {
+            /* line-height: 2px; */
+            letter-spacing: 5px; 
+            text-transform: capitalize;
+            border: 2px solid blue;
+            width: 100px;
+            text-overflow: ellipsis;
+                /* if you do this texts will go outside of the border */
+            overflow:hidden;
+                /* when the border is not sufficient for all the text to be shown then you can use "overflow: hidden" -- it hides the texts that cant be shown  */
+            
+        }
+
+        #normal2 {
+            text-decoration: underline;
+                /* type "td" --> enter */
+            text-decoration-color: red;
+                /* "tdc" */
+            text-decoration-style: dotted;
+                /* "tds" */
+            text-decoration-thickness: 6px;
+                /* "tdth" */
+            text-indent: 50px;
+                /* "ti" */
+        }
+            /* 
+            
+            "line-height" is used to add height btwn the lines (somehow this isn not working here)
+            "letter-spacing" is used to add space btwn the letters  
+             "text-transform" = has 3 types... 
+                    1/ capitalize (capitalize the first letter of each word), 
+                    2/ lowercase (lower case all words), 
+                    3/ uppercase (uppercase all words)
+            "text-decoration: underline" = to put underline
+            "tect-decoration-color" = wil underline the text with certain color 
+            "text-decoration-style: dotted" = will change the underline type into dotted style
+
+                    REMEMBER TO USE THE "text-decoration style and color" YOU MUST PUT THE "text-dceoration: underline" OR IT WILL NOT WORK
+            "text-decoration-thickness" = will change underline thickness
+            "text-indent" = will work just like tab space
+            
+            */
+        
+        #normal3 {
+            border: 2px solid blue;
+            width: 200px;
+            word-break: break-all;
+                /* just check amd uncheck this option at inspect option, you will know the difference
+                
+                This bascially fills the texts in the border, even of half of it*/
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="normal">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, porro ratione voluptas iusto repellat tempora. Nam libero necessitatibus laborum aliquam mollitia modi nostrum repellat placeat aspernatur, eius iure rerum ipsum ex expedita eaque harum impedit maxime recusandae! Minus et id eaque alias numquam, mollitia molestias repudiandae, rem expedita odio, culpa ipsam quod voluptates! Praesentium eveniet nemo voluptatem cupiditate nostrum exercitationem, aliquam deleniti necessitatibus hic eligendi a, qui soluta quisquam odio atque reprehenderit molestias quos ratione eaque itaque est labore illum. Placeat ad molestiae minima, recusandae in praesentium quae enim vel laborum facere explicabo sed dicta iusto laboriosam blanditiis aspernatur pariatur!
+    </div>
+<hr>
+    <div id="normal2">
+        Hello, this is Biswajeet.
+    </div>
+<hr>
+    <div id="normal3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, nesciunt et? Architecto quaerat excepturi nisi quas repellat facere exercitationem nesciunt, nulla earum accusantium deleniti praesentium, explicabo esse, iusto sapiente quisquam voluptatum? Rem fuga, beatae eveniet quaerat quos perspiciatis obcaecati. Officiis dignissimos totam fugit aperiam hic inventore molestiae reiciendis, quod sed corrupti adipisci laudantium vel eum corporis, assumenda ipsa ea quibusdam.
+    </div>
+</body>
+</html>

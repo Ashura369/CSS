@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position properties</title>
+    <style>
+        *{
+            background-color: lightyellow;
+        }
+        img{
+            margin: 10px;
+        }
+        .container{
+            border: 2px solid black;
+            height: 3000px;
+        }
+
+        /* POSITIONING RELATIVE */
+        .img2{
+            position: relative;
+            top: 50px;
+            left: 50px;
+
+                /* When you use relative, the img will be changed according to the values assigned, but the place it had originally acquired will remain intact. 
+                
+                But if you change the position from relative to absolute the img will change according to the values assigned but the place it had originally acquired wil not remain intect. That place will be taken by next imag / box / content
+                
+                Hence, whenever you use relative position (with no change values) at one img and absolute position at another img the second img will overlap on the first img. */
+
+                /* TRY CHNAGING THE POSITION OF IMG 2 FROM RELATIVE TO ABSOLUTE */
+        }
+
+        /* POSITIONING ABSOLUTE */
+        .IMG3{
+            position: absolute;
+        }
+
+        /* POSITIONING FIXED */
+        .img4{
+            position: fixed;
+
+                /* While using fixed what you need to remember is that, it will put the whole img / box / content at one place. Even if you scroll the page, the img will be intact at it its  own place. This is good for posting advertisements.
+                
+                To know more about this just put "height: 8000px;" at container class 
+                
+                And also keep in mind that, when you use this property, the place it had already acquired will not remain intact. It means it will loose its place that it had acquired but the photo will remain stuck at the page when you scroll*/
+        }
+
+        /* POSITIONING STICKY */
+        .img1{
+            position: sticky;
+            top: 100px;
+
+                /* The sticky acts the same as fixed. But the difference btwn sticky and fixed is, when you use sticky, it will be stuck only to its parent (ie container) after that parent, it will be stopped right there.
+                
+                But the fixed one is fixed for the whole page.
+                
+                That's why we have added a new div with box class and created another container to see the the img 1 as sticky ie how how img 1 works
+                
+                TRY RUNNING THE SITE FOR ONCE AND YOU WILL SEE THE DIFFERENCE*/
+        }
+        .box{
+            background-color: aquamarine;
+            height: 3000px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+This is the link for this code : -- https://youtu.be/9BlNJFIMUrY?si=JBFa4TgA5QCgD3ji
+
+    <div class="container">
+        <img src="/img/img 5.jpg" alt="img" width="200px" height="200px" class="img1">
+        <img src="/img/img 6.jpg" alt="img" width="200px" height="200px" class="img2">
+        <img src="/img/img 7.jpg" alt="img" width="200px" height="200px" class="img3">
+        <img src="/img/img 8.jpg" alt="img" width="200px" height="200px" class="img4">
+    </div>
+
+    <div class="box"></div>
+</body>
+</html>

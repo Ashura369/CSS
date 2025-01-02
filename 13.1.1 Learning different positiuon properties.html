@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position properties</title>
+    <style>
+        .father{
+            background-color: lightyellow;
+            width: 800px;
+            height: 800px;
+            border: 2px solid black;
+            margin:auto;
+
+            display: flex;
+            justify-content: left;
+        }
+        .child{
+            color: white;
+                font-weight: bolder;
+            border: 2px solid black;
+            width: 30%;
+            height: 30%;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child1{
+            background-color: red;
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+        .child2{
+            background-color: green;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .child3{
+            background-color:blue;
+            position: fixed;
+            width: 100px;
+            height: 50px;
+            top: 600px;
+            right: 100px;
+        }
+        .child4{
+            background-color: purple;
+            position: sticky;
+            top: 30px;
+        }
+
+        .spacer{
+            border: 2px solid black;
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father"> 
+        <div class="child child1">RELATIVE</div>
+        <div class="child child2">ABSOLUTE</div>
+        <div class="child child3">FIXED</div>
+        <div class="child child4">STICKY</div>
+    </div>
+    <div class="spacer"></div>
+</body>
+</html>

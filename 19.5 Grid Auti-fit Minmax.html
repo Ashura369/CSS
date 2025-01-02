@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            border: 5px solid black;
+            width: auto;
+            height: auto;
+            background-color: aquamarine;
+            padding: 1em;
+            display: grid;
+            gap: 1em;
+            grid-template-columns: repeat(auto-fit, minmax(2em, 6em));
+                /* it means when we put auto fit syntax, when we shorten the width of screen from browser's inspect option then the minimum width of a column should be 2em, and after that it will overflow. Ans when we widen the width of screen from browser's inspect option then the maximum width of a column should be 300px. No matter how much the wider the browser screen is, the max width of  the column should always be 6em  */
+        }
+        .box{
+            border: 3px solid black;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+                   
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+</body>
+</html>

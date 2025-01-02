@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Protest+Guerrilla&display=swap');
+        body {
+        font-family: "Playwrite CU", cursive;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        }
+
+
+        /* to change font like this, go to google --> type "google fonts" --> import font from there --> copy --> paste here  */
+
+        h1{
+            /* font-family: 'Times New Roman', Times, serif; */
+        }
+        #first{
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;            
+        }
+        #second{
+            /* font-family: 'Courier New', Courier, monospace; */
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: overline;            
+        }
+        #copied{
+            font-family: "Playwrite CU", cursive;
+        }
+       
+
+                /* 
+                    1/ font-family = to add font styles. There are multiple fonts added in the font family. Suppose if the first font doesnt work, then the second font will work, if second doesnt work then third will work. 
+
+                    2/ font-style = just use this to add italic style
+
+                    3/ font-weight = just use this add bold style
+
+                    4/ text-decoration = just use this to add underline
+                */
+    </style>
+    <title>Fonts, Texts, & Colors</title>
+</head>
+<body>
+    <div>
+        <h1>fonts, texts, & colors</h1>
+        <p id="first">We are learning fonts, texts, and colors. Hope you find it fun. </p>
+        <p id="second">We are learning fonts, texts, and colors. Hope you find it fun.</p>
+        <div id="lorem">
+            CSS Box Model
+                The CSS Box model defines how elements are rendered and how their dimensions are calculated.
+
+                It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.
+
+                The box model consists of four main components, which are
+
+                1. Content
+                The innermost component of the box model is the actual content of the element. It can be text, image, video, etc.
+                The content area is defined by the width and height properties.
+                2. Padding
+                The space between the actual content and the border of the element is the padding.
+                The padding area is defined by the property padding. For more details, follow the CSS Padding tutorial.
+                3. Border
+                The border surrounds the content and padding and gives the visual border of the element.
+                The border properties can be controlled using the border keyword. For more details, follow the CSS Borders tutorial.
+                4. Margin
+                The margin is the space outside the element that separates it from other elements in the layout.
+                The margin of the element is controlled by the margin property. For more details, follow the CSS Margin tutorial.
+        </div>
+
+            <!-- remember the fonts imported from google will work on div tag contents, but will not work on pre tag contents.
+                 To use the same font at pre tag, just copy the font-family type from the style body tag and paste at style pre tag. It will work -->
+
+        <pre id="copied">
+            CSS Box Model
+                The CSS Box model defines how elements are rendered and how their dimensions are calculated.
+
+                It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.
+
+                The box model consists of four main components, which are
+
+                1. Content
+                The innermost component of the box model is the actual content of the element. It can be text, image, video, etc.
+                The content area is defined by the width and height properties.
+                2. Padding
+                The space between the actual content and the border of the element is the padding.
+                The padding area is defined by the property padding. For more details, follow the CSS Padding tutorial.
+                3. Border
+                The border surrounds the content and padding and gives the visual border of the element.
+                The border properties can be controlled using the border keyword. For more details, follow the CSS Borders tutorial.
+                4. Margin
+                The margin is the space outside the element that separates it from other elements in the layout.
+                The margin of the element is controlled by the margin property. For more details, follow the CSS Margin tutorial.
+        </pre>
+    </div>
+</body>
+</html>

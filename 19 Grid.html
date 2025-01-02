@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: lightyellow;
+        }
+        .container{
+            background-color: rgb(118, 111, 111);
+            margin: auto;
+            margin-top: 10px;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+                /* "grid" filld the box / content completely over its parent containre's size */
+            font-size: 2em;
+            /* padding: 3rem; */
+            
+            grid-template-rows: 100px 100px ;
+                /* here we have divided rows into  rows.
+                Here we have made 1st row as 100px and 2nd row as 100px.
+                Try making the second row 200px you will see changes. YOU CAN UNDERSTAND BETTER THAT WAY  */
+            grid-template-columns: 100px 100px 100px;
+                /* here we have divided columnd into 3 columns */
+            /* 
+            FRACTIONAL UNIT
+            When you are using "fr" units on "grid-template-rows/columns;" it means that you are using same size units from all the boxes / contents. It will fill the boxes / contents all over its parent box.
+            eg-->
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                
+                            or
+                
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+
+                    Here at grid-templete-row:repeat(2, 1fr); it means "2 rows should be there, with 1fr size"
+                    Here at grid-templete-column:repeat(3, 1fr); it means "3 columns should be there, with 1fr size"
+
+                    JUST TRY PUTTING THESE VALUES FOR ONCE, AND YOU WILL SEE THE CHANGES
+            
+            */
+            
+            row-gap: 1rem;
+            column-gap: 1rem;
+        }
+        .item{
+            background-color: rgb(106, 106, 155);
+            border: 5px solid black;
+            color: white;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --padding:10px;
+            --margin:10px;
+            --border:2px solid black;
+            --color1:lightgreen;
+            --color2:lightpink;
+                /* YOU CAN USE WHATEVER VARIABLE YOU WANT */
+        }
+        .ul{
+            display: flex;
+        }
+        .li{
+            border: var(--border);
+            padding: 5px;
+            margin: 5px;
+            width: 10%;
+            list-style: none;
+        }
+        .nav{
+            padding: var(--padding);
+            margin: var(--margin);
+            border: var(--border);
+            background-color: var(--color2);
+        }
+        .container{
+            border: var(--border);
+            padding: var(--padding);
+            background-color: var(--color1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="ul">
+            <li class="li li1">Home</li>
+            <li class="li li2">About</li>
+            <li class="li li3">Contacts</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui assumenda, adipisci officia explicabo veniam aliquam, voluptatem incidunt ducimus itaque ratione, minus quibusdam sunt. Voluptatibus natus vero recusandae asperiores rerum quisquam amet impedit cupiditate necessitatibus illum adipisci consequuntur, quod eum reiciendis quos, officia atque error delectus omnis iste eius ipsam?
+    </div>
+    
+</body>
+</html>

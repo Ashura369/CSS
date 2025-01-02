@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* YOU CAN CHANGE THE MARGIN, PADDING, COLOR, & BACKGROUND COLOR IN INSPECT OPTION IN THE WEBSITE. THE BOX WILL SHOW ALL THE PADDING AND MARGIN VALUES THERE. */
+        body {
+            background-color: lightyellow;
+            
+        }
+
+        
+
+        *{
+            margin: 0;
+            padding: 30px; 
+        }
+            /* here universal padding will be applied into the whole conten. 
+            JUST TRY APPLYING PADDING UNIVERSALLY AND ALSO INTO INDIVIDUAL SELECTORS ALSO 
+            
+            If you put "height* here, then height mentioned in each individual selector will not be applied */
+        
+        .box {
+            background-color: aqua;
+        } 
+
+            .box_1 {
+                color: blue;
+                padding: 10px;
+                margin: 10px ;
+                border: 5px solid darkred;
+                height:80px;
+            }
+                /* 
+                This padding will not be implemented, bcoz there is already an Universal selector in operation. 
+                
+                REMEMBER THAT PADDING MUST NEED TO HAVE A BORDER STYLE IE "solid, dashed, dotted, double, groove, ridge, none, hidden, etc" 
+                
+                here height  = 80px means only content height is 80px. But when you add "box-sizing: border-box;" it will mean content, border size, and padding size all 3 will have height of 80 px 
+                */
+            .box_2 {
+                color: red;
+                padding: 20px;
+                margin: 20px ;
+                border: 10px dashed darkred;
+                height: 100px;
+                    box-sizing: border-box;
+            }
+                /* "box-sizing: border-box;" = means content + border size + padding = 100px  
+                
+                PL LEARN BOX SIZING BORDER BORDER BOZ IS VERY VERY IMP PLZ LEARN IT DEEPLY
+
+                site -- https://youtu.be/lLV5OW_YH-Q?si=Y0JCPdUP_Weeefyq
+                */
+                /* secondary names of boxes will have this style */
+            .box_3 {
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                border: 5px dotted darkred;
+
+            }
+            .box_4 {
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                border: 5px double darkred;
+            }
+            .box_5 {
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                border: 5px groove darkred;
+            }
+            .box_6 {
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                border: 5px ridge darkred;
+            }
+            .box_7 {
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                border: 5px inset darkred;
+            }
+            .box_8 {
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                border: 5px outset darkred;
+            }
+            .box_9 {
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                border: 5px none darkred;
+            }
+            .box_10 {
+                color: black;
+                padding: 10px;
+                margin: 10px;
+                border: 5px hidden darkred;
+            }
+    </style>
+    
+    <title>CSS Box Model</title>
+</head>
+<body>
+    <!-- 
+    4 steps in Box model :--
+        1/ Content
+        2/ Padding
+        3/ Border
+        4/ Margin
+    -->
+
+    <div class="box box_1">I am  box 1 - solid</div>
+    <div class="box box_2">I am  box 2 - dashed</div>
+    <div class="box box_3">I am  box 3 - dotted</div>
+    <div class="box box_4">I am  box 4 - double</div>
+    <div class="box box_5">I am  box 5 - groove</div>
+    <div class="box box_6">I am  box 6 - ridge</div>
+    <div class="box box_7">I am  box 7 - inset</div>
+    <div class="box box_8">I am  box 8 - outset</div>
+    <div class="box box_9">I am  box 9 - none</div>
+    <div class="box box_10">I am  box 10 - hidden</div>
+
+    
+        <!-- here we have given multiple names to a class,
+         here box 1 contains both the name "box" and "box_1". Here box is a Primary name and box 1 or box 2 is a secondary name -->
+
+</body>
+</html>

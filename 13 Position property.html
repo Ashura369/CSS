@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posiion property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: lightyellow;
+        }
+        h1{
+            color: red;
+        }
+        .box{
+            height: 133px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+                .box1{
+                    background-color:beige;
+                    /* position: absolute;             */
+                }
+                .box2{
+                    background-color:aquamarine;
+                   position: relative;
+                        top: -48px;
+                        left: 114px;
+                            /* If you do not put "Position: relative" the below values will not work */
+                }
+                .box3{
+                    background-color:brown;
+                    position: relative;
+                    z-index: 1;
+                        /* 
+                        We also changed the position of box 4 like box 2, but box 3 will be shown over box 4 bcoz, here we have added the "z-index: ;" value. Whenever the z-index value is higher from the z=index value of another box, the box containing the higher number will be shown above the lower number box 
+                        */
+                }
+                .box4{
+                    background-color:burlywood;
+                    position: relative;
+                        top: -48px;
+                        left: 114px;
+                        z-index: 0;
+                }
+                .parent{
+                    margin: 34px;
+                    padding: 43px;
+                    border: 2px solid   purple;
+                    background-color: darkgray;
+                }
+    </style>
+</head>
+<body>
+    <h1>This is position property !</h1>
+    <div class="parent">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2 >>> By doing this you are changing the position of the particular box. To do this efficiently, I recommend you to change the position of box from inspect option.
+        </div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+</html>

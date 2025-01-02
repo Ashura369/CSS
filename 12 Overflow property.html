@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 1px solid black;
+                /* the resualt will be overflow */
+        }
+        .box2{
+            width: 30vw;
+            height: 30vh;
+            margin: auto;
+            border: 1px solid black;
+            overflow: scroll;
+                /* do this to remove overflow, a scroll bar will be shown*/
+        }
+        .box3{
+            width:40vw;
+            height: 40vh;
+            margin: auto;
+            border: 1px solid black;
+            overflow: auto;
+        }
+        .box4{
+            width: 40vw;
+            height: 30vh;
+            margin: auto;
+            border: 1px solid black;
+            overflow: scroll;
+            white-space: nowrap;
+        }
+        .box5{
+            width: 40vw;
+            height: 30vh;
+            margin: auto;
+            border: 1px solid black;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .box6{
+            width: 40vw;
+            height: 30vh;
+            margin: auto;
+            border: 1px solid black;
+            overflow: clip;
+            white-space: nowrap;
+        }
+        .box7{
+            width: 40vw;
+            height: 20vh;
+            margin: auto;
+            border: 1px solid black;
+            overflow: auto;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            /* overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll; 
+                In short it can be written as "overflow: auto hidden"
+            
+            "overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll;"
+                In short it can be written as "overflow: hidden auto;"
+            
+
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda illo aliquid, sapiente ad provident doloremque minus nesciunt deserunt, quod impedit, autem neque ut modi. Voluptas, accusantium. Deserunt assumenda Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus obcaecati at autem nulla repudiandae in corporis, vero, totam magnam laborum saepe distinctio aperiam velit assumenda, eos nemo accusamus modi optio! Dolorem dicta quia recusandae, ullam similique facilis sunt esse! Est alias soluta quo repellendus dignissimos! Inventore voluptatum quis voluptate doloremque aliquam a laboriosam porro veniam quod maxime iure perferendis incidunt illo soluta sit, nulla harum dolores culpa facilis excepturi amet nihil adipisci. Corrupti, officia nihil! Error unde cupiditate, debitis temporibus quaerat amet natus illum aliquam doloremque molestiae? Quisquam blanditiis maxime quas facere harum architecto labore atque! At necessitatibus ipsam debitis?
+    </div> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h3>Using overflow scroll</h3>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rerum dolorum voluptatibus. Architecto ea qui sit fugiat facere ex quo animi, dolorem corporis totam quam quod nostrum ut ratione excepturi est consequuntur tempore perferendis odit dolore error maxime nihil! Dolorem voluptate est laudantium atque perferendis, numquam, enim tenetur harum odio ea quaerat ipsum porro aperiam maiores similique molestiae omnis illum doloremque accusamus vel accusantium vero! Nesciunt nulla, possimus sed perspiciatis numquam aperiam fuga adipisci consectetur, tempora, necessitatibus similique doloremque cupiditate ut. Eligendi ratione non labore tempore voluptatibus eveniet atque aliquam, vitae nesciunt, aspernatur nobis, tenetur necessitatibus unde sequi quo. Magni pariatur quidem totam velit hic, aliquid quibusdam non quas. Blanditiis voluptates ex possimus adipisci? Atque, officia? Dicta vero laudantium suscipit quia? Ab reiciendis soluta fuga illo, architecto accusamus reprehenderit corrupti eveniet quisquam eius, fugit delectus perferendis corporis aut ipsum eaque quia praesentium. Doloremque tenetur ipsum odit fugit adipisci impedit labore.
+    </div>
+<br><br><br><br>
+<h3>Using overflow auto</h3>
+<pre>
+    Whenver we will be using overflow auto, if the vw and vh fits all the content inside the border
+    then the scroll bar will not be shown. If the content doesnt fits in the border then the scroll bar will be shown,
+
+    TRY ADDING MORE LOREM IN THE div TAG.
+</pre>
+    <div class="box3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam dolorum voluptas velit magnam in! Inventore architecto harum ut? Reiciendis dolor rem ipsum ipsam, quas explicabo a maiores excepturi eligendi sed dolorem nam molestias impedit, voluptates exercitationem eos aperiam magni quaerat? Atque iure amet et perspiciatis dolor? Quod natus vel sit iusto sunt esse quibusdam praesentium possimus sequi, iste dolorum numquam saepe nulla. Veritatis animi perspiciatis officia cum. Aperiam impedit dolore voluptate totam corporis voluptates, pariatur sequi asperiores nobis, quam, excepturi nisi ab odio in perferendis cupiditate eum dolores natus? Mollitia sint doloribus, ut alias dignissimos porro voluptate a numquam voluptatum vitae tempore eveniet in sapiente quos quaerat fuga eius, commodi obcaecati. Assumenda provident sunt doloribus corrupti, incidunt ipsa sint eligendi. Asperiores autem veritatis harum odit omnis blanditiis accusantium reprehenderit excepturi laborum consequatur esse nam quia, repellendus sequi itaque eaque ducimus minus laudantium vel dolor non? Quidem fugiat quaerat explicabo dicta. lorem150
+    </div>
+<br><br><br><br>
+<h3>Whitespace nowrap</h3>
+<pre>
+    Here the whitespace nowrap will be shown as, there will be no scond lin. So you just have to
+    scroll it to the  left and right to read the contents.
+</pre>
+    <div class="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis itaque facilis nemo suscipit aliquam recusandae officia vero cumque hic ipsum placeat impedit aut excepturi animi maxime obcaecati unde error cum debitis, expedita laborum! Sit dolorum quos beatae soluta deleniti, ex obcaecati ipsa maxime, voluptatem hic consequuntur id, maiores nam reprehenderit adipisci et commodi! Consequuntur veniam, alias aspernatur possimus et suscipit. Modi facere corporis dolores odit magni nemo, architecto, quo fugiat libero tenetur quis culpa repellat iusto? Id rem quas quidem doloremque velit ducimus quam accusantium saepe, beatae delectus ipsum vero facere voluptatibus quod voluptates odit dolores quae iusto laudantium.
+    </div>
+<br><br><br><br>
+<h3>Text overflow ellipsis</h3>
+<pre>
+    This will hide the texts that overflows the border. The hidden texts will be shown as "..."
+</pre>
+    <div class="box5">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora molestias alias officiis quia, ea quibusdam veritatis distinctio adipisci deleniti quam quas odit suscipit dolore architecto pariatur nemo fugit nulla ipsa laborum asperiores perferendis aperiam atque? Nulla quaerat nihil eaque ducimus. Laborum hic molestiae tempore, animi ducimus quam veniam repellat est harum fugiat error incidunt excepturi quis architecto delectus recusandae magnam qui minus voluptate impedit quibusdam iure. Nesciunt cum eum, amet officiis quod ullam dolorem expedita itaque assumenda saepe nulla ipsum ipsa temporibus molestias incidunt dolorum corporis. At unde ea accusantium quos debitis. Illo nihil minus blanditiis ut. Officiis, doloremque?
+    </div>
+<h3>Overflow clip</h3>
+<pre>
+    Here there will be text in teh border, but the scholl option will nnot be shown in the overflow clip
+</pre>
+    <div class="box6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsum dolorum ratione deleniti eaque commodi est, inventore tempora ducimus accusantium, a quod optio mollitia aut sint soluta pariatur perferendis. Repudiandae dolorem accusamus ea animi reiciendis corporis magnam dolore. Ipsum odit velit illum ducimus voluptate, necessitatibus officia repellat aliquid sunt quae excepturi ipsam accusamus eius modi nesciunt deleniti quibusdam possimus at ab! Sint et veritatis eius non autem dignissimos, atque consequuntur ducimus libero quos expedita sed modi obcaecati eos quaerat. Hic quam animi laboriosam nobis blanditiis, totam molestiae, corporis saepe ipsum magnam sed delectus perferendis a ea aspernatur. Nesciunt repellat possimus facilis voluptates eum ipsa consectetur? Corporis exercitationem reiciendis vero quasi. Ab blanditiis suscipit officia, perspiciatis quo dolor. Maxime maiores laborum, a eveniet, corporis consequuntur laboriosam iusto laudantium aut commodi magnam aliquid, perferendis rem quo blanditiis nisi explicabo sint ratione atque quaerat reiciendis recusandae porro impedit. Laboriosam aliquid odit voluptates eum!
+    </div>
+<h3>Overflow-x and overflow-y</h3>
+    <div class="box7">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis asperiores vel sed, sequi eaque commodi consectetur neque quos quis, excepturi error aspernatur tempora illo eveniet exercitationem repellat laborum ut non ullam? Perspiciatis corporis eveniet, quis dolor possimus in veritatis ex adipisci blanditiis nulla, ea nisi, vel aspernatur? Quisquam culpa rerum, ipsam excepturi, molestiae aliquam alias earum sunt ea officia, quas asperiores in laboriosam aliquid cumque quam ad totam eum voluptate? Perspiciatis, recusandae sit. Explicabo nulla commodi vel ratione id quibusdam! Eaque nobis sint alias doloribus placeat pariatur aliquid sunt ab quod numquam quisquam officia praesentium aut veniam amet, distinctio qui ad quasi quas voluptate dolorum deserunt ratione. Magnam exercitationem nobis quisquam molestiae reiciendis, tenetur iste aut. Ex dolorem laudantium eligendi animi maiores amet. Id doloremque aspernatur libero, beatae maiores quisquam eligendi minima nesciunt consequatur atque similique incidunt voluptas rem fuga ex eaque facere alias voluptates assumenda ipsam unde voluptatem?
+    </div>
+</body>
+</html>

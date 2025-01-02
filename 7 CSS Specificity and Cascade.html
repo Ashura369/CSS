@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity & cascade</title>
+    <style>
+        h1{color: aqua;}
+        .yellow{color: yellow;}
+        .cred{color:red;}
+        
+        .cpurple{color:purple;        
+            color: gold !important;}
+        
+       
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+        <!-- 
+        
+        Here only purple color was applied bcoz of the Cascade Algorithm...
+
+            1/ Position and order of appearance: the order in which your CSS rules appear
+                (IF YOU CHANGE THE CLASS ORDER ie IF YOU BRING cred TO THE DOWN AND cpurple ABOVE THE cred STYLE WILL BE APPLIED)
+
+            2/ Specificity: an algorithm that determines which CSS selector has the strongest match
+                (STYLE WILLBE APPLIED TO THAT SECTION WHICH IS MORE SPECIFIC IN NATURE
+                
+                ***SPECIFICITY NATURE = INLINE SELECTOR -> ID SELECTOR -> CLASS OR ATTRIBUTE SELECTOR -> ELEMENT SELECTOR -> UNIVERSAL SELECTOR)
+
+            3/ Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+
+            4/ Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+                (IF YOU WANT SOMETHING THAT OVERWRITS THE EVEN THE INLINE CSS THEN JUST TYPE "color: gold !important;")
+
+
+            To calculate specificity, assign a value to each part of the selector:
+
+                --Universal Selector: 0
+                --Element selectors and pseudo-elements: 1
+                --Class selectors, attribute selectors, and pseudo-classes: 10
+                --ID selectors: 100
+                --Inline styles: 1000
+
+                *** IF YOU WRITE " h1.yellow {color: blueviolet;} THIS VALUE WILL BE APPLIED ABOVE OTHERS BCOZ, h1 = 1  and yellow = 10, HENCE 1+10=11. THUS THE VALUE OF THIS WILL BE APPLIED. BUT TO US ETHIS YOU HAVE TO REMOVE "!important".
+        }"
+
+       
+        -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        *{
+            background-color: lightyellow;
+            
+        }
+        .box{
+            border: 2px solid red;
+            padding: 10px;
+            width: 50%;
+            margin: 2px auto;
+            text-align: center;
+            background-color: aquamarine;
+
+            box-shadow: 10px 10px 60px 1px #8e8585;
+                /* 
+                1/ 30px -- horizontal offset
+                2/ 30px -- vertical offest
+                3/ 60px -- makes shadow blurry, the larger the better
+                4/ 10px -- expandes or increases the shadow size
+                */
+        }
+        .txt1{
+            text-shadow: 5px 10px 5px #575757;
+                /* there is only 3 elements should be added in the text element */
+            width: 80%;
+            margin:auto;
+            outline: 10px solid green;
+                /* adds outline */
+            border: 10px solid black;  
+            outline-offset: 10px;
+                /* adds a 10px of distance btwn outline and border */
+            border-radius: 20px;
+                /* makes the border edges curvy */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    box-shadow is a popular CSS property that enables designers to add shadow effects around an element's frame. It can be used to give any element, be it a div, image, or button, a 3D feel or to emphasize on hover.
+
+    THIS IS THE SYNTAX >>>> "box-shadow: h-offset v-offset blur spread color inset;"
+
+        -- h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+        -- blur: The larger the value, the blurrier the shadow.
+        -- spread: Expands or shrinks the shadow size.
+        -- color: Defines the shadow color.
+        -- inset: Makes the shadow inner.
+    
+    Here is an example:
+    THIS IS THE SYNTAX >>>> ".div-element { box-shadow: 5px 5px 15px 5px #888888; }"
+    
+    -->
+
+    <h1>This is shadow</h1>
+
+    <div class="box">
+        This ia a box
+    </div>
+
+    <pre>
+
+
+    </pre>
+
+    <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, id. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione aliquid quod beatae dolore laudantium tenetur id, sit similique. Repudiandae id ratione iusto quasi! Quisquam harum aliquid illum nihil ipsam ducimus consequatur sequi odio nulla esse repellat ea sit, nesciunt doloremque dicta eaque molestias, et fugiat obcaecati, enim perferendis atque iure.</p>
+
+</body>
+</html>

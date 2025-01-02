@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            border: 5px solid black;
+            width: auto;
+            height: auto;
+            background-color: aquamarine;
+            height: auto;
+            padding: 1em;
+            gap: 1em;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-rows: repeat(2, minmax(250px, 1fr));
+        }
+        .box{
+            border: 3px solid black;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+                   
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+                            AUTO-FILL vs AUTO-FIT
+
+    Auto-fill fills the row with as many columns as it can fit. So it creates implicit columns whenever a new column can fit, bcoz its trying to fill the row with as many columns as it can. The newly added columns can and may be empty, but they will still occupy a designated space in the row.
+
+    Auti-fit fits the currenty available columns into the space by expanding them so that they take up any available space. The browser does that after filling that extra space with extra columns (as with auto-fill) and then collapsing the empty ones.
+    
+    -->
+
+    <div class="con">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+
+
+
+</body>
+</html>

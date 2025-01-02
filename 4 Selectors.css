@@ -1,0 +1,104 @@
+div {
+    color: green;
+}
+
+/* Element Selector */
+    /* class selector */
+        .jeet {
+            background-color: red;
+        }
+            /* here .jeet class color will change bcoz we havent put the style color into .jeet  */
+        .aman, .aman_2 {
+            background-color:crimson;
+            color: azure;
+        }
+        /* "." is used for class selector */
+
+    /* ID Selector */
+       #green  {
+        color: blueviolet;
+        background-color: aqua;
+       } 
+       /* "#" is used for ID selector */
+       
+    /* Child Selector */
+       #child_1 > p {
+        color:brown;
+        background-color:antiquewhite;
+       }
+            /* "#child > p" = means the paragraph inside #child
+            if you have written "div > p" it would have mean the paragraph inside the div. In this scenario the this individual style would have applied on every p inside div tag in the entire code. */
+
+            /* 
+
+                div > p {
+                color:brown;
+                background-color:antiquewhite;
+                }
+
+            */
+
+       #child_2 > p{
+        color: brown;
+        background-color: antiquewhite;
+       }
+            /* this will not work bcoz p is not a  direct child of div. so you have to write "#child > section > p"  */
+
+            /* 
+            
+            #child_2 > section > p{
+                color: brown;
+                background-color: antiquewhite;
+            }
+
+            */
+
+            /* you can do the same via Descendant Selector */
+       
+    /* Descendant Selecdtor */
+       #child_2  p {
+        color: brown;
+        background-color: antiquewhite;
+       }
+            /* this means p under #child_2, wheather if its a direct child or not, it will run */
+            
+            /* Universal Selector
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            when you write this syntax, it would lead to no margin */
+    
+    /* Pseudo Selector */
+        a:link{
+            color: red;
+        }
+            /* means a link which hasent been visited yet will be shown as red */
+
+        a:visited{
+            color: blue;
+        }
+            /* means a link which has been visited will be shown as blue */
+            /* IN YOUR CASE IT WILL BE SHOWN AS BLUE, COZ YOU ALREADY HAVE VISITED THE LINK */
+
+        a:active {
+            background-color: green;
+        }
+            /* means whenever you will be clicking on the links you will be shown a green background color */
+        a:hover {
+            background-color: yellow;
+        }
+            /* whenever you take your curser on the links they will be shown a background color of yellow */
+        
+        #new_link a {
+            color: black;
+        }
+
+        /* 
+        p:first-child {
+            background-color: dimgray;
+        }
+        
+        */
+            /* this means where ever p is first child it will automatically turn their background into dimgray */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color1:blue;
+            --color2:red;
+                /* here we created a color names
+                To use this you have to use "root" tag.
+                Hence root is a global variable */
+        }
+        
+        .nav{
+            background-color:var(--color1);
+                /* here we have used the color names as "var(--color1);" */
+        }
+
+        .container{
+            background-color: var(--color2);
+                /* here we have used the color names as "var(--color2);" */
+        }
+
+        ul li:first-child{
+            --color1:pink;
+            background-color: var(--color1);
+                /* here we have changed the color1 from blue to pink
+                THIS IS CALLED LOCAL VARIABLE
+                JUST REMEMBER THE SYNTAX THAT HOW ITS DONE */
+        }
+
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="li li1">Home</li>
+            <li class="li li2">About</li>
+            <li class="li li3">Contacts</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur eveniet dolor nisi. Dolorum expedita id distinctio, iusto itaque soluta molestias mollitia a excepturi dolore dolores fugit, sapiente rerum, sint at ea esse. Iste, doloremque ab dicta deleniti aut dignissimos sapiente enim, in eum, illum eos!
+    </div>
+</body>
+</html>

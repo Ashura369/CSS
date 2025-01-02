@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex and grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: lightyellow;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: inline-block;
+            background-color: red;
+            width: 100%;
+            height: 500px;
+            margin: 5px;
+            display: flex;
+            justify-content:left;
+
+                /* JUST TRY COMMENTING OUT BOTH THE ABOVE TAGS, AND YOU WILL SEE THE RESUALTS */
+                /* THIS TAG IS USED FOR TO MODIFY CONTENT / BOX HORIZONTALLY
+                "align-items:center" = US THIS TAG TO MODIFY CONTENT / BOX VERTICALLY*/
+
+                /* REMEMBER -- "justify: content" only works when "display: flex"  is used, either it will not work
+                JUST TRY PUTTING ALL THE VALUES IN A justify: content TAG, YOU WILL SEE THE RESULAT */
+        }
+        .c1 {
+            color: white;
+                font-weight: bold;
+            width: 10%;
+            height: 100px;
+            background-color: green;
+            border: 2px solid yellow;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c2 {
+            color: white;
+                font-weight: bold;
+            width: 10%;
+            height: 100px;
+            background-color: blue;
+            border: 2px solid yellow;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .c3 {
+            color: white;
+                font-weight: bold;
+            width: 10%;
+            height: 100px;
+            background-color:purple;
+            border: 2px solid yellow;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .case{
+            border: 2px solid black;
+            display: inline-block;
+            background-color: red;
+            width: 100%;
+            height: 500px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                /* by putting align items tag here, we have put the content / box inside the case at the center */
+        }
+        .b1 {
+            color: white;
+                font-weight: bold;
+            width: 10%;
+            height: 100px;
+            background-color: green;
+            border: 2px solid yellow;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b2 {
+            color: white;
+                font-weight: bold;
+            width: 10%;
+            height: 100px;
+            background-color: blue;
+            border: 2px solid yellow;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .b3 {
+            color: white;
+                font-weight: bold;
+            width: 10%;
+            height: 100px;
+            background-color:purple;
+            border: 2px solid yellow;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Display Felx !</h1>
+    <h2>Using display flex horizontal only...</h2>
+    <div class="box"> 
+        <div class="c1">TEXT 1</div>
+        <div class="c2">TEXT 2</div>
+        <div class="c3">TEXT 3</div>
+    </div>
+
+    <h2>Using display flex horizontal and vertical both...</h2>
+    <div class="case">
+        <div class="b1">TEXT 1</div>
+        <div class="b2">TEXT 2</div>
+        <div class="b3">TEXT 3</div>
+    </div>
+</body>
+
+</html>
